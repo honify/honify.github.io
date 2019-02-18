@@ -1,0 +1,12 @@
+<h1 id="id">
+  Refresh Page now
+</h1>
+
+<script>
+if(window.localStorage.getItem('data')!=undefined){
+ var data = parseInt(window.localStorage.getItem('data'))*2;
+ document.getElementById('id').innerHTML  = data;
+ window.localStorage.setItem('data', data);
+}else{
+window.localStorage.setItem('data', 1);
+}</script>
